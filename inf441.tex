@@ -1,7 +1,19 @@
 \documentclass[12pt,t]{beamer}
 \usepackage{pslatex}
+\usepackage[T1]{fontenc}       
+\usepackage[utf8]{inputenc}    % pour les accents (mettre latin1 pour windows au lieu de utf8)
+\usepackage[frenchb]{babel}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
 \usetheme[nat, TPlrimage = "ImgDLinks.JPG", logostyle=none,
 headstyle=institute]{Frederiksberg}
+
+\usepackage{colortbl}
+\definecolor{bg}{RGB}{235,235,235}
+\definecolor{bk}{RGB}{135,135,135}
+\newcommand{\class}[1]{\colorbox{bg}
+{\textcolor{red}{\usefont{OT1}{cmtt}{m}{n}#1}}}
+
 \title{Liens dansants}
 \subtitle{Algorithme X et ses applications}
 \author{Zhixing CAO, Yuxiang LI}
@@ -17,69 +29,71 @@ headstyle=institute]{Frederiksberg}
 
 \frame[plain]{\titlepage}
 
-\begin{frame}
-\frametitle{Plan}
-\tableofcontents
-% You might wish to add the option [pausesections]
-\end{frame}
-
-
 \section{Introduction}
 
-\subsection[Short First Subsection Name]{First Subsection Name}
-
 \begin{frame}
-\frametitle{}
-\framesubtitle{Subtitles are optional}
-
-\begin{itemize}
-  \item
-  \item
-\end{itemize}
+\frametitle{Plan}
+\tableofcontents[currentsection]
 \end{frame}
 
 \begin{frame}
-\frametitle{}
-
-% You can create overlays
-\begin{itemize}
-  \item using the \texttt{pause} command:
-  \begin{itemize}
-    \item First item.
-    \pause
-    \item Second item.
-  \end{itemize}
-  \item using overlay specifications:
-  \begin{itemize}
-    \item<3-> First item.
-    \item<4-> Second item.
-  \end{itemize}
-  \item using the general \texttt{uncover} command:
-  \begin{itemize}
-    \uncover<5->{\item First item.}
-    \uncover<6->{\item Second item.}
-  \end{itemize}
-\end{itemize}
+\frametitle{Liens dansants}
 \end{frame}
 
-\section*{Summary}
+\begin{frame}
+\frametitle{EMC et Algorithme X}
+\end{frame}
+
+\section{Organisation du code}
 
 \begin{frame}
-\frametitle<presentation>{Summary}
+\frametitle{Plan}
+\tableofcontents[currentsection]
+\end{frame}
 
-\begin{itemize}
-  \item The \alert{first main message} of your talk in one or two lines.
-\end{itemize}
+\begin{frame}
+\frametitle{Structure}
+\end{frame} 
 
-% The following outlook is optional.
-\vskip0pt plus.5fill
-\begin{itemize}
-  \item Outlook
-  \begin{itemize}
-    \item Something you haven't solved.
-    \item Something else you haven't solved.
-  \end{itemize}
-\end{itemize}
+\section{Applications}
+
+\begin{frame}
+\frametitle{Plan}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{EMC généralisé}
+\end{frame}
+
+\begin{frame}
+\frametitle{N-Reines}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sudoku}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pavage}
+\end{frame}
+
+\section{Analyse du résultat}
+
+\begin{frame}
+\frametitle{Plan}
+\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}
+\frametitle{Analyse du résultat}
+\end{frame}
+
+\section{Démonstration}
+
+\begin{frame}
+\frametitle{Plan}
+\tableofcontents[currentsection]
 \end{frame}
 
 \end{document}
