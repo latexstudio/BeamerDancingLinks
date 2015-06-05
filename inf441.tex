@@ -37,11 +37,20 @@ headstyle=institute]{Frederiksberg}
 \end{frame}
 
 \begin{frame}
-\frametitle{Liens dansants}
+\frametitle{Liens dansants} 
+Réinserer x dans la liste en temps constant
+\begin{center}
+\includegraphics[width=.95\textwidth]{noeud.jpg}
+\label{fig:node}
+\end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{EMC et Algorithme X}
+\begin{center}
+\includegraphics[width=.85\textwidth]{ImgDLinks.JPG}
+\label{fig:dlx}
+\end{center}
 \end{frame}
 
 \section{Organisation du code}
@@ -53,6 +62,10 @@ headstyle=institute]{Frederiksberg}
 
 \begin{frame}
 \frametitle{Structure}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{structure.jpg}
+\label{fig:structure}
+\end{center}
 \end{frame} 
 
 \section{Applications}
@@ -64,18 +77,51 @@ headstyle=institute]{Frederiksberg}
 
 \begin{frame}
 \frametitle{EMC généralisé}
+Colonnes secondaires : une relaxation
+\begin{itemize}
+  \item Compter les colonnes sautées
+  \item Sauter une colonne tant qu'il y a la possibilité
+\end{itemize}
+\begin{center}
+\includegraphics[width=.65\textwidth]{ImgDLinks.JPG}
+\label{fig:dlxx}
+\end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{N-Reines}
+\begin{itemize}
+  \item Colonnes : $N$ rangs, $N$ colonnes et $4N - 2$ diagonaux
+  \item Rang : $N \times N$ positions
+\end{itemize}
+\begin{center}
+\includegraphics[width=.5\textwidth]{queens.png}
+\label{fig:queens}
+\end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Sudoku}
+\begin{itemize}
+  \item Colonnes : $N^2$ positions, $N \times 3N$ pour les détails
+  \item Rang : $N^2$ positions avec $N$ nombres chacune
+\end{itemize}
+\begin{center}
+\includegraphics[width=.5\textwidth]{sudoku.png}
+\label{fig:sudoku}
+\end{center}
 \end{frame}
 
 \begin{frame}
 \frametitle{Pavage}
+\begin{itemize}
+  \item Colonnes : $M$ types, $N$ cases à occuper
+  \item Rang : à calculer
+\end{itemize}
+\begin{center}
+\includegraphics[width=.5\textwidth]{pavage.png}
+\label{fig:pavage}
+\end{center}
 \end{frame}
 
 \section{Analyse du résultat}
@@ -87,6 +133,19 @@ headstyle=institute]{Frederiksberg}
 
 \begin{frame}
 \frametitle{Analyse du résultat}
+La complexité dépend de : 
+\begin{itemize}
+  \item Taille de la matrice
+  \item Densité de la matrice
+  \item Nombre de solutions
+  \item \ldots
+\end{itemize}
+Les avantages de l'algorithme X :
+\begin{itemize}
+  \item Réduire l'arbre de recherche
+  \item Simplifier l'étape de vérification
+  \item \ldots
+\end{itemize}
 \end{frame}
 
 \section{Démonstration}
